@@ -1,0 +1,122 @@
+body {
+    font-family: 'Merriweather', serif;
+}
+
+/*--------------- header/nav ---------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 0.625em 1.25em;
+}
+
+.logo img {
+    width: 3.125em;
+    height: 3.125em;
+}
+
+h1 {
+    display: none;
+}
+
+nav {
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+nav ul {
+    margin: 0 1.25em;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    padding: 0.68em 0;
+    margin-left: 0.625em;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 0.625em; /* to match the height of the logo*/
+}
+
+/*--------------- main content ---------------*/
+
+.site-tagline {
+    min-height: 12.5em;
+    background-image: url("../img/bg-sm.jpg");
+    background-size: cover;
+    background-position: center top;
+    border-width: 0.125em 0 0.125em 0;
+    border-style: solid;
+    border-color: #000;
+    box-shadow: 0px 0px 1.25em rgba(0, 0, 0, 0.4);
+}
+
+.site-tagline h2 {
+    font-family: 'Kaushan Script', cursive;
+    padding: 1em 0 0 1.25em;
+    text-shadow: 0 0 3.125em #fff;
+    max-width: 66%;
+}
+
+.site-tagline span {
+    color: #2e806f;
+}
+
+.content ul {
+    list-style: none;
+    padding: 5em 0.94em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.content li {
+    margin: 0 5px 0.625em 0.3125em;
+}
+
+/* to do - create responsive, optimized images */
+.content img {
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .site-tagline {
+      background-image: url("../img/bg-nr.jpg");
+  }
+
+  .content ul {
+      justify-content: space-between;
+    }
+
+  .content li {
+    max-width: 48%;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .site-tagline {
+      background-image: url("../img/bg-md.jpg");
+      background-position: center;
+  }
+
+  .content li {
+    max-width: 32%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .site-tagline {
+      background-image: url("../img/bg-lg.jpg");
+  }
+}
