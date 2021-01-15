@@ -48,7 +48,7 @@ nav a {
 
 .site-tagline {
     min-height: 12.5em;
-    background-image: url("../img/bg-sm.jpg");
+    background-image: url("../img/bg-sm.webp");
     background-size: cover;
     background-position: center top;
     border-width: 0.125em 0 0.125em 0;
@@ -87,7 +87,7 @@ nav a {
 
 @media only screen and (min-width: 600px) {
   .site-tagline {
-      background-image: url("../img/bg-nr.jpg");
+      background-image: url("../img/bg-nr.webp");
   }
 
   .content ul {
@@ -106,7 +106,7 @@ nav a {
   }
 
   .site-tagline {
-      background-image: url("../img/bg-md.jpg");
+      background-image: url("../img/bg-md.webp");
       background-position: center;
   }
 
@@ -117,6 +117,6 @@ nav a {
 
 @media only screen and (min-width: 1200px) {
   .site-tagline {
-      background-image: url("../img/bg-lg.jpg");
+      background-image: url("../img/bg-lg.webp");
   }
 }
